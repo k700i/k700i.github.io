@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="no">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <title>HFHT Tjenester</title>
+        <link rel="icon" href="logos/iconlogo.png">
+        
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'>
+        </script>
+        <script>
+            $(function() {
+                $(".toggle").on("click", function(){
+                    if($(".item").hasClass("active")){
+                        $(".item").removeClass("active");
+                    }else{
+                        $(".item").addClass("active");
+                    }
+                })
+            })
+        </script>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li class='logo'><a href="index.html"><img id='logonotmobile' src="logos/logoblue1.png" alt='logo'></a></li>
+                    <li class='logo'><a href="index.html"><img id='logomobile' src="logos/logowhite.png" alt='logo'></a></li>
+                    
+                    <li class='item'><a href='index.html'>Hjem</a></li>
+                    <li class='item'><a href='tjenester.html'>Våre tjenester</a></li>
+                    <li class='item'><a href='helsetips.html'>Råd om helse</a></li>
+                    <li class='item'><a href='#' class='active'>Kontakt oss</a></li>
+                    <li class='toggle'><a href='#'><span class='bars'></span></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <main>
+            <div id='main-top-wrapper'>
+                <img class='pageillustration' src='header-pics/contact-headpic.png' title="illustrasjon forside">
+                <div class='section'>
+                    <div class='info-wrapper'>
+                        <h1>Kontakt oss</h1>
+                        <div class='info-txt'>
+                                <p>Halden flyktinghelsetjeneste har fire ansatte. Her finner du informasjon om hvordan og hvor du kommer i kontakt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id='main-content-wrapper'>
+                <div class='section'>
+                    <div class='employees'>
+                        <h2>Ansatte</h2>
+                            <div class='contact-person'>
+                                <h3>Sigrun Omsland Elefskaas</h3>
+                                <p>Koordinator og kontaktperson</p>
+                                <p>50&nbsp;% stilling</p>
+                                <p>Er tilgjengelig hver tirsdag og torsdag, samt mandag mandager i oddetallsuker</p>
+                                <a href='mailto:Sigrun.Omsland.Elefskaas@halden.kommune.no' target="_blank">Sigrun.Omsland.Elefskaas@&#8203;halden.kommune.no</a>
+                            </div>
+
+                            <div class='contact-person'>
+                                <h3>Bodil Greaker Flø</h3>
+                                <p>Helsesøster</p>
+                                <p>50&nbsp;% stilling</p>
+                                <a href='mailto:BodilSynnovegreaker.Flo@halden.kommune.no' target="_blank">
+                                <p>BodilSynnovegreaker.Flo@&#8203;halden.kommune.no</p></a>
+                            </div>
+
+                            <div class='contact-person'>
+                                <h3>Özel Despina Hansen</h3>
+                                <p>Psykolog</p>
+                                <p>50&nbsp;% stilling</p>
+                            </div>
+
+                            <div class='contact-person'>
+                                <h3>Zoltan Karosi</h3>
+                                <p>Lege</p>
+                                <p>30&nbsp;% stilling</p>
+                            </div>
+                    </div>
+                </div>
+
+
+                <div class="section">
+                    <div class='synopsis-wrapper'>
+                        <h2>Kontaktinformasjon</h2>
+                        <div class='synopsis'>
+                            <img class='syn-img' src='desc-pics/icon-tlf.png'>
+                            <div class='syn-txt'>
+                                <h3>Telefon</h3>
+                                <table>
+                                <tr>
+                                    <th scope="row">Kontor</th>
+                                    <td>458 78 606 <br>69 21 27 63</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Koordinator</th>
+                                    <td>69 21 77 81</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Helsesøster</th>
+                                    <td>69 21 77 82</td>
+                                </tr>
+                            </table>
+                            </div>
+                        </div>
+
+
+                        <div class='synopsis'>
+                            <img class='syn-img' src='desc-pics/icon-tid.png'>
+                            <div class='syn-txt'>
+                                <h3>Åpningstider</h3>
+                                <table>
+                                    <tr>
+                                        <th scope="row">Tirsdag</th>
+                                        <td>09:00 14:30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"> Torsdag</th>
+                                        <td>09:00 - 14:30</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class='synopsis'>
+                            <img class='syn-img' src='desc-pics/icon-adr.png'>
+                            <div class='syn-txt'>
+                                <a href='kontakt.html' class='syn-link'><h3>Adresser</h3></a>
+                                 <table>
+                                    <tr>
+                                        <th scope="row">Post</th>
+                                        <td>Halden helsekontor ved Flyktningehelseteam <br>PB 150 <br>1751 Halden</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Besøk</th>
+                                        <td>Jacob Blochs gt. 4</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='location-map-wrapper'>
+                    <h2>Kart</h2>
+                    <iframe id='location-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.5941687076838!2d11.38809625258219!3d59.12245908502207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412c4b04946c7%3A0x8e2e6fed3cf66f3d!2sJacob%20Blochs%20gate%204%2C%201776%20Halden!5e0!3m2!1sen!2sno!4v1588963683137!5m2!1sen!2sno" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+                <a href='#'>Til toppen</a>
+                <p>Halden flyktninghelsetjeneste</p>
+                <p>Halden flyktninghelsetjneste er en del av Halden kommune.</p>
+                <p><a href='http://wwww.halden.kommune.no'>halden.kommune.no</a></p>
+        </footer>
+        
+        
+        
+    </body>
+</html>

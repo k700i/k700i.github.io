@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="no">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <title>Halden Flyktninghelsetjeneste</title>
+        <link rel="icon" href="logos/iconlogo.png">
+        
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'>
+        </script>
+        <script>
+            $(function() {
+                $(".toggle").on("click", function(){
+                    if($(".item").hasClass("active")){
+                        $(".item").removeClass("active");
+                    }else{
+                        $(".item").addClass("active");
+                    }
+                })
+            })
+        </script>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li class='logo'><a href="index.html"><img id='logonotmobile' src="logos/logoblue1.png" alt='logo'></a></li>
+                    <li class='logo'><a href="index.html"><img id='logomobile' src="logos/logowhite.png" alt='logo'></a></li>
+                    
+                    <li class='item'><a href='#' class='active'>Hjem</a></li>
+                    <li class='item'><a href='tjenester.html'>Våre tjenester</a></li>
+                    <li class='item'><a href='helsetips.html'>Råd om helse</a></li>
+                    <li class='item'><a href='kontakt.html'>Kontakt oss</a></li>
+                    <li class='toggle'><a href='#'><span class='bars'></span></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <main>
+            <div id='main-top-wrapper'>
+                <img class='pageillustration' src='header-pics/velkommen-pic.png' title="illustrasjon forside">
+                <div class='section'>
+                    <div class='info-wrapper'>
+                        <!--<h1>Halden Flyktinghelsetjeneste</h1>-->
+                        <div class='info-txt'>
+                            <p>Flyktninghelseteamet hjelper bosatte flyktninger i Halden til å få nødvendig helsehjelp i ordinær helsetjeneste. På denne nettsiden finner du informasjon om hva som innebærer vårt tilbud, råd for vanlige helseplager i Norge, og kontkaktinformasjon til oss.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id='main-content-wrapper'>
+                <div class='section'>
+                    <div class='synopsis-wrapper'>
+                        <h2>Sidens innholdsfortegnelse</h2>
+
+                        <div class='synopsis'>
+                            <a href='tjenester.html' class='syn-link'><img class='syn-img' src='desc-pics/icon-tjenester.png'></a>
+                            <div class='syn-txt'>
+                                <a href='tjenester.html' class='syn-link'><h3>Tjenester</h3></a>
+                                <p>Informasjon om hvem vi er, hva vi tilbyr til hvem.</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class='synopsis'>
+                            <a href='helsetips.html' class='syn-link'><img class='syn-img' src='desc-pics/icon-healthadvice2.png'></a>
+
+                            <div class='syn-txt'>
+                                <a href='helsetips.html' class='syn-link'><h3>Råd om helse</h3></a>
+                                <p>Tips til hvordan man kan opprettholde god helse i Norge.</p>
+                            </div>
+                        </div>
+
+                        <div class='synopsis'>
+                            <a href='kontakt.html' class='syn-link'>
+                                <img class='syn-img' src='desc-pics/icon-kontakt.png'>
+                            </a>
+                            <div class='syn-txt'>
+                                <a href='kontakt.html' class='syn-link'><h3>Kontaktinformasjon</h3></a>
+                                <p>Informasjon om hvordan man kan komme i kontakt med oss.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        
+        <footer>
+                <a href='#'>Til toppen</a>
+                <p>Halden flyktninghelsetjeneste</p>
+                <p>Halden flyktninghelsetjneste er en del av Halden kommune.</p>
+                <p><a href='http://wwww.halden.kommune.no'>halden.kommune.no</a></p>
+        </footer>
+        
+        
+        
+    </body>
+</html>

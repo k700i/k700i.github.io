@@ -1,0 +1,393 @@
+/*hos meg gikk verken padding eller margin vekk med mindre jeg tok den i *, men dette er i og for seg ikke den beste praksisen da dette gjelder kun elementer i body. Ettersom det er den beste praksisen å sette inn margin og padding til 0 er i body, valgte jeg å bruke begge deler*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#logonotmobile{
+    display: none;
+}
+
+#logomobile{
+    cursor: pointer;
+    height: 50px;
+    margin-right: auto;
+    align-content: center;
+}
+
+
+nav{
+    background: #005FB8;
+    position: fixed;
+    width: 100%;   
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.item a:not(.active):hover{
+    background-color: rgba(0,0,0,.1);
+}
+
+.menu li{
+    font-size: 16px;
+}
+
+.menu li a{
+    display: block;
+    padding: 16px 8px;
+}
+
+
+
+
+
+
+
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.toggle{
+    order:1;
+}
+
+.item{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    order: 2;
+    display: none;
+}
+
+.item.active{
+    display: block;
+    border-top: 1.5px solid rgba(0,0,0,.2);
+}
+
+.menu li .active{
+    color: #fff;
+    background-color: rgba(0,0,0,.15);
+}
+
+.toggle{
+    cursor: pointer;
+}
+
+.bars{
+    background: #fff;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before, .bars::after{
+    background: #fff;
+    content:"";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before{
+    top: 5px;
+}
+
+.bars::after{
+    top: -5px;
+}
+
+h1, h2{
+    text-align: center;
+    margin: 8px 0 24px 0;
+}
+
+h3{
+    margin-bottom: 8px;
+}
+
+.syn-txt h3{
+    margin: 16px 0;
+}
+
+.contact-person{
+    padding: 0 16px 16px 0;
+    margin-top: 16px;
+}
+
+main{
+    padding-top: 86px;   
+}
+
+#main-top-wrapper .section, #main-content-wrapper{
+    box-sizing: border-box;
+    width: 93%;
+}
+
+main a{
+    color: #000;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+main .pageillustration{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.section{
+    width: 100%;
+    margin: 16px 16px 24px 16px;
+}
+
+#main-content-wrapper{
+    padding-bottom: 2.5em;
+}
+
+.synopsis, #location-map-wrapper{
+    text-align: center;
+    margin: 16px 0;
+}
+
+.syn-link{
+    display: block;
+    color: black;
+}
+
+.infographic-txt{
+    margin-bottom: 16px;
+}
+
+.infographic{
+    width: 100%;
+}
+
+.syn-img{
+    height: 200px;
+}
+.syn-txt{
+    padding-left:16px;
+    text-align: left;
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #112538;
+    color: #fff;
+    line-height: 1.5em;
+    padding: 16px;
+    width: 100%;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+th{
+    vertical-align: top;
+    width: 120px;
+}
+
+td{
+    padding: 0 0 16px 16px;
+}
+
+ .syn-txt ul {
+        list-style:initial;
+        list-style-position: inside;
+    }
+
+#location-map{
+    width: 110%;
+    height: 400px;    
+}
+
+
+
+
+
+
+
+
+
+/*tab*/
+@media all and (min-width: 468px){
+    #logonotmobile{
+        cursor: pointer;
+        height: 50px;
+        margin-right: auto;
+        margin: 0;
+        display: block;     
+    }
+
+    #logomobile{
+        display: none;
+    }
+    
+    nav{
+        width: 100%;
+        background-color: rgba(255,255,255,0.95);
+        border-bottom: 1px solid #005FB8;
+    }
+    
+    h3{
+        text-align: left;
+    }
+    
+    nav ul li a{
+        color: #004585;
+    }
+    
+    .menu li .active{
+        color: #fff;
+        background: #004585;
+    }
+    
+    .item a:not(.active):hover{
+        background-color: #cceaed;
+        color: #005fb8;
+    }
+    
+    .bars, .bars::before, .bars::after{
+        background: #005FB8;
+    }
+        
+    main{
+       padding-top: 103px;
+    }
+    
+    .menu{
+        justify-content:center;
+    }
+    
+    .logo{
+        flex: 1;
+    }
+
+    .synopsis-wrapper{
+        overflow: hidden;
+    }
+    
+    .synopsis{
+        background-color: #eee;
+    }
+    
+    .syn-img{
+        float: left;
+        
+    }
+   
+    .syn-txt{
+        overflow: hidden;
+        height: 200px;
+        padding-right: 24px;
+    }    
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*desktop*/
+@media all and (min-width: 768px){
+    nav{
+        width:768px;
+        margin: auto;
+        position: static;
+    }
+    
+    .item{
+        display: block;
+        width: auto;
+    }
+    
+    .toggle{
+        display: none;
+    }
+    
+    .logo{
+        order: 0
+    }
+    
+    .item{
+        order: 1;
+    }
+      
+    .item a:not(.active):hover{
+        background-color: #CCEAED;
+        border-radius: 5px;
+        color: #005FB8;
+    }
+    
+    .item.active{
+        border-top: 0px;
+    }
+    
+    .menu li{
+        padding: 16px 8px;
+    }
+    
+    .menu li .active{
+        border-radius: 5px;
+    }
+    
+    ul li a{
+        color: #005FB8;
+    }
+    
+    main{
+        width:768px;
+        margin: auto;
+        padding-top: 20px;
+    }   
+    
+    #main-top-wrapper .section, #main-content-wrapper, #location-map{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+    
+    
+    
+    
+    
+    
+}
+
+@media all and (min-width: 784px){
+    .section{
+        margin-left: 0;
+        transition:  all 0.3s ease 0s;
+    }   
+
+}

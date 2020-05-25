@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="no">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <title>HFHT Tjenester</title>
+        <link rel="icon" href="logos/iconlogo.png">
+        
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'>
+        </script>
+        <script>
+            $(function() {
+                $(".toggle").on("click", function(){
+                    if($(".item").hasClass("active")){
+                        $(".item").removeClass("active");
+                    }else{
+                        $(".item").addClass("active");
+                    }
+                })
+            })
+        </script>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li class='logo'><a href="index.html"><img id='logonotmobile' src="logos/logoblue1.png" alt='logo'></a></li>
+                    <li class='logo'><a href="index.html"><img id='logomobile' src="logos/logowhite.png" alt='logo'></a></li>
+                    
+                    <li class='item'><a href='index.html'>Hjem</a></li>
+                    <li class='item'><a href='tjenester.html'>Våre tjenester</a></li>
+                    <li class='item'><a href='#' class='active'>Råd om helse</a></li>
+                    <li class='item'><a href='kontakt.html'>Kontakt oss</a></li>
+                    <li class='toggle'><a href='#'><span class='bars'></span></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div id='main-top-wrapper'>
+                <img class='pageillustration' src='header-pics/advice-headpic.png' title="illustrasjon forside">
+                <div class='section'>
+                    <div class='info-wrapper'>
+                        <h1>Helseråd</h1>
+                        <div class='info-txt'>
+                            <p>Her finner du raske helseråd som er nyttige å vite i Norge. Du finner også lenker til andre nyttige nettsider.</p>
+                            <div class='section' id='internal-health-href'>
+                                <h4>Hurtiglenker her på siden</h4>
+                                <ul>
+                                    <li><a href='#sleep'>Søvn</a></li>
+                                    <li><a href='#fever'>Feber</a></li>
+                                    <li><a href='#diet'>Kosthold i Norge</a></li>
+                                    <li><a href='#vitamin-d'>Mangel på vitamin D</a></li>                 
+                                </ul>
+                            </div>
+                            <div class='section' id='external-health-href'>
+                                <h4>Nyttige eksterne lenker</h4>
+                                <ul>
+                                    <li><a href='https://nhi.no/' target="_blank">Norsk Helseinformatikk</a></li>
+                                    <li><a href='https://www.fhi.no/' target="_blank">Folkehelseinstituttet</a></li>
+                                    <li><a href='https://www.helsedirektoratet.no/' target='_blank'>Helsedirektoratet</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id='main-content-wrapper'>
+                
+                <div class="section">
+                    <div class='synopsis-wrapper'>
+                        <h2>Raske tips</h2>
+                        <div class='synopsis'>
+                            <img class='syn-img' src='desc-pics/icon-sove.png'>
+                            <div class='syn-txt' id='sleep'>
+                                <h3>Søvn</h3>
+                                <p>God søvn er viktig for å ha god fysisk og mental helse. Fast døgnrytme hjelper med å opprettholde god søvn. Pleier du å slite med å sovne kan du ta kontakt med lege.</p>
+                            </div>
+                        </div>
+
+
+                        <div class='synopsis'>
+                            <img class='syn-img' src='desc-pics/icon-feber.png'>
+                            <div class='syn-txt' id='fever'>
+                                <h3>Feber</h3>
+                                <p>Feber er en kroppstemperatur på over 38°C. Høy feber er over 40°C. Vanligviser er feber helt ufarlig. Kontakt lege ved høy feber og mistanke om alvorlig sykdom.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="section">
+                    <div class='synopsis-wrapper' id='diet'>
+                        <h2>Kosthold i Norge</h2>
+                        <div class='synopsis'>
+                            <img class='syn-img' src='notmypics/icon-nokkelhull.png'>
+                            <div class='syn-txt'>
+                                <h3>Nøkkelhullsprodukt</h3>
+                                <p>Matvarer med merket inneholder mer fiber og fullkorn og mindre fett og mettet fett, sukker og salt, sammenliknet med andre matvarer av samme type uten Nøkkelhullet.</p>
+                            </div>
+                        </div>
+
+
+                        <div class='synopsis'>
+                            <img class='syn-img' src='notmypics/icon-grovskala2.png'>
+                            <div class='syn-txt'>
+                                <h3>Kosthold</h3>
+                                <p>Når du velger brødprodukt, bør du velge produkt som er grovere enn 50%. Se etter "Brødskala'n"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class='section'>
+                    <div class='infographic-section' id='vitamin-d'>
+                        <div class='infographic-txt'>
+                            <h2>Vitamin D</h2>
+                            <p>En voksen person trenger 10-20 mikrogram vitamin D daglig. Solen er viktiste kilde til vitamin D. Vinteren i Norge gir ikke nok sollys til at vi får mengden vi trenger. Men det er mulig med enkle grep.</p>
+                        </div>
+                        <div id=dvitamingraphic>
+                            <img class='infographic' src='infographics/dvitamingraphics-final.png' alt='infografikk om vitamin D'>
+                        </div>
+                    </div>
+                
+                
+                </div>
+                
+            </div>
+        </main>
+        
+        <footer>
+                <a href='#'>Til toppen</a>
+                <p>Halden flyktninghelsetjeneste</p>
+                <p>Halden flyktninghelsetjneste er en del av Halden kommune.</p>
+                <p><a href='http://wwww.halden.kommune.no'>halden.kommune.no</a></p>
+        </footer>
+        
+        
+        
+    </body>
+</html>
