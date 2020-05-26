@@ -32,6 +32,7 @@ nav{
 
 ul{
     list-style: none;
+    width: 95%;
 }
 
 a{
@@ -360,6 +361,10 @@ td{
     
     .menu li .active{
         border-radius: 5px;
+    }
+    
+    ul{
+        width: 100%;
     }
     
     ul li a{
