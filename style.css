@@ -27,12 +27,11 @@ body{
 nav{
     background: #005FB8;
     position: fixed;
-    width: 100%;   
+    
 }
 
 ul{
     list-style: none;
-    width: 100%;
 }
 
 a{
