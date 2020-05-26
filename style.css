@@ -27,11 +27,12 @@ body{
 nav{
     background: #005FB8;
     position: fixed;
-    
+    width: 100%;   
 }
 
 ul{
     list-style: none;
+    
 }
 
 a{
@@ -360,10 +361,6 @@ td{
     
     .menu li .active{
         border-radius: 5px;
-    }
-    
-    ul{
-        width: 100%;
     }
     
     ul li a{
