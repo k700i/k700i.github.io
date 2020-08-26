@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+header{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20%;
+}
+
+#author{
+    font-family: hand;
+    font-size: 2em;
+}
+
+h1{
+    margin: 0 0 20px 0;
+}
+
+h3{
+    margin: 0 0 8px 0;
+}
+
+nav ul li{
+    font-size: 1.2em;
+}
+
+ul{
+    list-style: none;
+    width: 90%;
+    margin: 10px 0 20px 0;
+}
+
+a{
+    color: orange;
+    text-decoration: none;
+}
+
+a:not(.active):hover{
+    color: orangered;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+main{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.synopsis-wrapper{
+    /*border: 1px solid black;*/
+    height: 600px;
+}
+
+.synopsis-wrapper2{
+    /*border: 1px solid black;*/
+    height: 500px;
+}
+
+
+img{
+    width: 400px;
+}
+
+.txt-wrapper{
+    border-right: 2px solid orange;
+    padding-right: 12px;
+    
+}
+
+.txt-wrapper h3{
+    margin-bottom: 8px;
+}
+
+.product{
+    float: left;
+    margin-right: 16px;
+}
+
+p{
+    text-align: justify;
+    padding: 4px 0 4px 0;
+}
+
+
+.txt-wrapper-pdf{
+    width: 560px;
+    margin: 16px 0 8px 0;
+}
+/*FONTS*/
+@font-face {
+    font-family: hand;
+    src: url(ARBERKLEY.ttf);
+}
+
+/*FONTS*/
+@font-face {
+    font-family: hand;
+    src: url(ReenieBeanie-Regular.ttf);
+}
